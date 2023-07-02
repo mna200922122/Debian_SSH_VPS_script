@@ -74,7 +74,7 @@ clear
 \e[34;1m   \        /\  ___/|  |_\  \__(  <_> )  Y Y  \  ___/\|  \e[0m
 \e[34;1m    \__/\  /  \___  >____/\___  >____/|__|_|  /\___ >_  \e[0m
 \e[34;1m         \/       \/          \/            \/     \/\/  \e[0m
-\e[31;1m        VPS AUTOSCRIPT BY THARUKA SANDARUWAN             \e[0m";
+\e[31;1m                         Spring                         \e[0m";
         echo " ";
         echo " ";
         echo "* Details For Your Account *";
