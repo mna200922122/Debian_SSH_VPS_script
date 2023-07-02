@@ -1,4 +1,4 @@
-# script Spring (kose nane shahan)ebi hal kon
+# script Spring  
 
 
 SSH+SSL+DROPBEAR+SQUID autoscript for Debian VPS 
