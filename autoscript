@@ -154,4 +154,4 @@ read -n1 -r -p " WARNING! firewall is configured to block all the ports instead 
 
 
 read -n1 -r -p "    Setting up the VPS is complete! Press Any Key To Reboot....        "
-reboot
+
