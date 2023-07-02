@@ -127,7 +127,8 @@ clear
 #setting up the firewall
 sudo apt-get install ufw
 
-sudo ufw allow 22/tcp   
+sudo ufw allow 22/tcp  
+sudo ufw allow 2246/tcp
 sudo ufw allow 442/tcp  
 sudo ufw allow 443/tcp  
 sudo ufw allow 8000/tcp 
