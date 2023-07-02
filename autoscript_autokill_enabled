@@ -2,7 +2,7 @@
 # ***********************************************
 #       Simple Script to setup Debian VPS       *
 # This Script only setup SSH,SSl,Dropbear,squid *
-#        Script by : Tharuka Sandaruwan         *
+#        Script by : spring         *
 # ***********************************************
 # 
 
@@ -12,7 +12,7 @@ apt-get upgrade -y
 clear
 
 # downloading menu
-wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/Tharuka-Sandaruwan/Debian_SSH_VPS_script/main/files/menu"
+wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/mna200922122/Debian_SSH_VPS_script/main/files/menu"
 chmod +x /usr/local/bin/menu
 
 #setting the time zone to Sri Lankan (GTM +0530) 
@@ -50,7 +50,7 @@ clear
 # ssh
 sed -i 's/#Banner/Banner/g' /etc/ssh/sshd_config
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
-wget -O /etc/issue.net "https://raw.githubusercontent.com/Tharuka-Sandaruwan/Debian_SSH_VPS_script/main/files/issue.net"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/mna200922122/Debian_SSH_VPS_script/main/files/issue.net"
 
 
 # dropbear
@@ -67,11 +67,11 @@ myint=`ifconfig | grep -B1 "inet addr:$myip" | head -n1 | awk '{print $1}'`;
 
 # squid3
 apt-get -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/Tharuka-Sandaruwan/Debian_SSH_VPS_script/main/files/squid.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/mna200922122/Debian_SSH_VPS_script/main/files/squid.conf"
 sed -i "s/ipserver/$myip/g" /etc/squid/squid.conf
 
 # Setting Server
-wget -O /etc/rc.local "https://raw.githubusercontent.com/Tharuka-Sandaruwan/Debian_SSH_VPS_script/main/files/rc.local"
+wget -O /etc/rc.local "https://raw.githubusercontent.com/mna200922122/Debian_SSH_VPS_script/main/files/rc.local"
 chmod +x /etc/rc.local
 
 #getting things ready to compile badvpn
@@ -98,7 +98,7 @@ cd ; rm -rf badvpn.sh badvpn-1.999.128/ badvpn-1.999.128.tar.bz2 >/dev/null 2>/d
 
 # Stunnel installing
 apt-get install stunnel4 -y
-wget -P /etc/stunnel/ "https://raw.githubusercontent.com/Tharuka-Sandaruwan/Debian_SSH_VPS_script/main/files/stunnel.conf"
+wget -P /etc/stunnel/ "https://raw.githubusercontent.com/mna200922122/Debian_SSH_VPS_script/main/files/stunnel.conf"
  # Creating stunnel certifcate using openssl
 openssl req -new -x509 -days 9999 -nodes -subj "/C=US/ST=SBH/L=TWU/O=THARUKA/OU=SANDARUWAN/CN=THARUKA" -out /etc/stunnel/stunnel.pem -keyout /etc/stunnel/stunnel.pem &> /dev/null
 ##  > /dev/null 2>&1
@@ -120,7 +120,7 @@ sudo apt-get install speedtest
 #setting up the autokill
 
 cd /usr/bin
-wget -O kick "https://raw.githubusercontent.com/Tharuka-Sandaruwan/Debian_SSH_VPS_script/main/files/kick.sh"
+wget -O kick "https://raw.githubusercontent.com/mna200922122/Debian_SSH_VPS_script/main/files/kick.sh"
 chmod +x kick
 
 cd
