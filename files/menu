@@ -204,10 +204,10 @@ do
             echo -e "
             \e[34;1m .......................     \e[0m
             \e[34;1m  OpenSSH Port : 22  \e[0m
-            \e[34;1m  Dropbear Port: 2246 555  \e[0m
+            \e[34;1m  Dropbear Port: 2246 2247  \e[0m
             \e[34;1m  Stunnel Port : 443 445  \e[0m
             \e[34;1m  Squid Port : 3128 8000 8080  \e[0m
-            \e[34;1m  Badvpn Port : 7300  \e[0m
+            \e[34;1m  Badvpn Port : custom  \e[0m
             \e[34;1m .......................     \e[0m
             \e[31;1m       SPRING               \e[0m";
             break
