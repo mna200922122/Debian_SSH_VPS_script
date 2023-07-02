@@ -14,6 +14,8 @@ read -n1 -r -p "Press Any Key To Setup Your VPS....        "
  
 
 #getting things ready
+
+apt-get update -y && apt-get upgrade -y
 apt-get update
 apt-get upgrade -y
 clear
@@ -148,3 +150,4 @@ read -n1 -r -p " WARNING! firewall is configured to block all the ports instead 
 
 read -n1 -r -p "    Setting up the VPS is complete! Press Any Key To Reboot....        "
 
+reboot
