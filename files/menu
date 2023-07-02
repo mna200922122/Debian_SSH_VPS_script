@@ -198,7 +198,7 @@ echo -e "
 \e[34;1m   \        /\  ___/|  |_\  \__(  <_> )  Y Y  \  ___/\|  \e[0m
 \e[34;1m    \__/\  /  \___  >____/\___  >____/|__|_|  /\___ >_  \e[0m
 \e[34;1m         \/       \/          \/            \/     \/\/  \e[0m
-\e[31;1m        VPS AUTOSCRIPT BY THARUKA SANDARUWAN              \e[0m";
+\e[31;1m                         SPRING                         \e[0m";
 PS3='
 Please Enter Your Choice From 1 → 11 : '
 options=(
@@ -219,12 +219,12 @@ do
             echo -e "
             \e[34;1m .......................     \e[0m
             \e[34;1m  OpenSSH Port : 22  \e[0m
-            \e[34;1m  Dropbear Port: 442 555  \e[0m
+            \e[34;1m  Dropbear Port: 2246 555  \e[0m
             \e[34;1m  Stunnel Port : 443 445  \e[0m
             \e[34;1m  Squid Port : 3128 8000 8080  \e[0m
             \e[34;1m  Badvpn Port : 7300  \e[0m
             \e[34;1m .......................     \e[0m
-            \e[31;1m        VPS AUTOSCRIPT BY THARUKA SANDARUWAN           \e[0m";
+            \e[31;1m       SPRING               \e[0m";
             break
              ;;
         "Delete User")
