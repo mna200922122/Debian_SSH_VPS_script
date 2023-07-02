@@ -7,9 +7,7 @@
 #
  clear
 echo -e "
-\e[34;1m   __      __       .__                             ._.  \e[0m
-\e[34;1m  /  \    /  \ ____ |  |   ____  ____   _____   ____| |  \e[0m
-\e[34;1m         \/       \/          \/            \/     \/\/  \e[0m
+ 
 \e[31;1m                          SPRING                        \e[0m";
 
 read -n1 -r -p "Press Any Key To Setup Your VPS....        "
