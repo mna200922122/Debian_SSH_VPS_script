@@ -5,7 +5,7 @@
 #        Script by : Tharuka Sandaruwan         *
 # ***********************************************
 #
- 
+ clear
 echo -e "
 \e[34;1m   __      __       .__                             ._.  \e[0m
 \e[34;1m  /  \    /  \ ____ |  |   ____  ____   _____   ____| |  \e[0m
@@ -124,9 +124,6 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 rm *.txt;rm *.tar.gz;rm *.deb;rm *.asc;rm *.zip;rm ddos*;
 
 
-#speedtest
-curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
-sudo apt-get install speedtest
 
 #installing htop
 sudo apt-get install htop 
